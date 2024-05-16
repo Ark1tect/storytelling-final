@@ -1,48 +1,60 @@
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
-a, a:hover, a:visited {
+
+a,
+a:hover,
+a:visited {
     color: #0071bc;
 }
+
 #map {
-    top:0;
+    top: 0;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
     position: fixed;
 }
+
 #mapInset {
-    bottom:50px;
-    right:30px;
+    bottom: 50px;
+    right: 30px;
     height: 180px;
-    width:250px;
-    max-width:100%;
+    width: 250px;
+    max-width: 100%;
     position: fixed;
     z-index: 1;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
 }
-#mapInset .mapboxgl-ctrl-bottom-left{
+
+#mapInset .mapboxgl-ctrl-bottom-left {
     display: none;
 }
+
 @media (max-width: 500px) {
     #mapInset {
         display: none;
     }
 }
+
 #header {
     margin: auto;
     width: 100%;
     position: relative;
     z-index: 5;
 }
-#header h1, #header h2, #header p {
+
+#header h1,
+#header h2,
+#header p {
     margin: 0;
     padding: 2vh 2vw;
     text-align: center;
 }
+
 #footer {
     width: 100%;
     min-height: 5vh;
@@ -54,51 +66,61 @@ a, a:hover, a:visited {
     position: relative;
     z-index: 5;
 }
+
 #features {
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
+
 .hidden {
     visibility: hidden;
 }
+
 .centered {
     width: 50vw;
     margin: 0 auto;
 }
+
 .lefty {
     width: 33vw;
     margin-left: 5vw;
 }
+
 .righty {
     width: 33vw;
     margin-left: 62vw;
 }
+
 .fully {
     width: 100%;
     margin: auto;
 }
+
 .light {
     color: #444;
     background-color: #fafafa;
 }
+
 .dark {
     color: #fafafa;
     background-color: #444;
 }
+
 .step {
     padding-bottom: 50vh;
     /* margin-bottom: 10vh; */
     opacity: 0.25;
 }
+
 .step.active {
     opacity: 0.99;
 }
 
 .step div {
-    padding:  25px 50px;
+    padding: 25px 50px;
     line-height: 25px;
     font-size: 15px;
-    font-family:"helvetica"
+    font-family: "helvetica"
 }
 
 .step img {
@@ -106,7 +128,11 @@ a, a:hover, a:visited {
 }
 
 @media (max-width: 750px) {
-    .centered, .lefty, .righty, .fully {
+
+    .centered,
+    .lefty,
+    .righty,
+    .fully {
         width: 90vw;
         margin: 0 auto;
     }
@@ -123,15 +149,20 @@ a, a:hover, a:visited {
     right: 30%;
     top: 175px;
     text-align: center;
-    background-color: #0d1a33; /* blue background */
+    background-color: #0d1a33;
+    /* blue background */
     color: #fff;
-    padding: 10px; /* Add padding for better visibility */
-    border-radius: 4px; /* Optional: rounded corners for better aesthetics */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
-    font-size: 22px; /* Smaller font size */
+    padding: 10px;
+    /* Add padding for better visibility */
+    border-radius: 4px;
+    /* Optional: rounded corners for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: subtle shadow for depth */
+    font-size: 22px;
+    /* Smaller font size */
 }
 
-.ast-img{
-    width:50%;
-    height:auto
+.ast-img {
+    width: 50%;
+    height: auto
 }
