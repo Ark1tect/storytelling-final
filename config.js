@@ -13,7 +13,8 @@ var config = {
     title: 'Champlain Hudson Power Express',
     subtitle: 'Bringing Clean Hydropower from Quebec to Queens',
     byline: 'Noah Williams',
-    footer: 'Sourced from <a href ="https://chpexpress.com/"> CHPE\'s Project Site </a>, <a href = "https://qns.com/2023/09/astoria-converter-station-champlain-hudson-power-express/"> QNS </a>. Data on hydropower facilities was sourced from <a href ="https://www.hydroquebec.com/documents-data/open-data/hydrometric-data/"> Hydro Quebec</a>. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Sourced from <a href ="https://chpexpress.com/"> CHPE\'s Project Site </a>, <a href = "https://qns.com/2023/09/astoria-converter-station-champlain-hudson-power-express/"> QNS </a>, <a href ="https://commercialobserver.com/2023/01/nrg-energy-astoria-power-plant-offshore-wind-company-216m/"/> Commercial Observer</a> . Data on hydropower facilities was sourced from <a href ="https://www.hydroquebec.com/documents-data/open-data/hydrometric-data/"> Hydro Quebec</a>.<br> Images were sourced from <a href = "https://www.hydroquebec.com/projects/hertel-new-york-interconnection"/> Hydro Quebec, <a href ="https://en.wikipedia.org/wiki/Hydro-Qu%C3%A9bec#/media/File:%C3%89vacuateur_de_crues_R-B.jpg/"> Wikipedia</a>, and <a href="https://www.caldwellmarine.com/submarine-cable-installation/"/> Caldwell Marine International,  </a> <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    //adding unique chapters//
     chapters: [
         {
             id: 'intro-panel',
@@ -196,7 +197,7 @@ var config = {
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []

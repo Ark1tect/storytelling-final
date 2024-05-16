@@ -328,9 +328,9 @@ map.on('load', () => {
                 'coordinates': [
                     [
                         [-73.94253396418293, 40.762203369057275],
-                        [ -73.94436761285144, 40.76286090206591],
+                        [-73.94436761285144, 40.76286090206591],
                         [-73.94339850186003, 40.764272642056916],
-                        [ -73.94159687958596, 40.76369342493009],
+                        [-73.94159687958596, 40.76369342493009],
                         [-73.94253396418293, 40.762203369057275]
 
                     ]]
@@ -407,7 +407,7 @@ map.on('load', () => {
 });
 //making the polygons clickable//
 map.on('click', 'hertel-sub', (e) => {
-   var hertpop= new mapboxgl.Popup()
+    var hertpop = new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML('<h1>Hidden in Plain Sight </h1> <p>The HVDC cables connecting Hertel Substation to New York will mostly run next to roads and follow highway right-of-ways</p>')
         .addTo(map);
@@ -426,33 +426,33 @@ map.on('mouseleave', 'hertel-sub', () => {
 });
 
 map.on('click', 'astoria-sub', (e) => {
-    var astpop= new mapboxgl.Popup({ offset: [-300, -25] })
-         .setLngLat(e.lngLat)
-         .setHTML('<h1>Evolving Energy</h1> <p>As New York works to complete the new converter station, other nearby properties may soon look different as well. An offshore wind company recently purchased the nearby NRG fossil-fuel powered energy plant and plans to use the site as a connection point to a large-scale wind farm off of Long Island.</p>')
-         .addTo(map);
- });
- 
- map.on('mouseenter', 'astoria-sub', () => {
-     map.getCanvas().style.cursor = 'pointer';
- });
- 
- map.on('mouseleave', 'astoria-sub', () => {
-     map.getCanvas().style.cursor = '';
- });
+    var astpop = new mapboxgl.Popup({ offset: [-300, -25] })
+        .setLngLat(e.lngLat)
+        .setHTML('<h1>Evolving Energy</h1> <p>As New York works to complete the new converter station, other nearby properties may soon look different as well. An offshore wind company recently purchased the nearby NRG fossil-fuel powered energy plant and plans to use the site as a connection point to a large-scale wind farm off of Long Island.</p>')
+        .addTo(map);
+});
 
- map.on('click', 'rainey-sub', (e) => {
-    var raineypop= new mapboxgl.Popup({ offset: [250, 0] })
-         .setLngLat(e.lngLat)
-         .setHTML('<h1>Asthma Alley No More?</h1><p>Western Queens has been infamous for poor air quality resulting from the concetnration of power plants in the area. The CHPE could result in a savings of over 3.7 million metric tons of harmful emmisions, according to projections published by the Governor\'s office.</p>')
-         .addTo(map);
- });
- map.on('mouseenter', 'rainey-sub', () => {
-     map.getCanvas().style.cursor = 'pointer';
- });
- 
- map.on('mouseleave', 'rainey-sub', () => {
-     map.getCanvas().style.cursor = '';
- });
+map.on('mouseenter', 'astoria-sub', () => {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'astoria-sub', () => {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'rainey-sub', (e) => {
+    var raineypop = new mapboxgl.Popup({ offset: [250, 0] })
+        .setLngLat(e.lngLat)
+        .setHTML('<h1>Asthma Alley No More?</h1><p>Western Queens has been infamous for poor air quality resulting from the concetnration of power plants in the area. The CHPE could result in a savings of over 3.7 million metric tons of harmful emmisions, according to projections published by the Governor\'s office.</p>')
+        .addTo(map);
+});
+map.on('mouseenter', 'rainey-sub', () => {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'rainey-sub', () => {
+    map.getCanvas().style.cursor = '';
+});
 
 
 // Create a inset map if enabled in config.js
