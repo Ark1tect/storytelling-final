@@ -150,19 +150,11 @@ a:visited {
     top: 175px;
     text-align: center;
     background-color: #0d1a33;
-    /* blue background */
+    /* blue background trying to match ocean*/
     color: #fff;
     padding: 10px;
     /* Add padding for better visibility */
-    border-radius: 4px;
-    /* Optional: rounded corners for better aesthetics */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: subtle shadow for depth */
+    border-radius: 5px;
     font-size: 22px;
-    /* Smaller font size */
-}
-
-.ast-img {
-    width: 50%;
-    height: auto
+    
 }
