@@ -20,8 +20,8 @@ a:visited {
 #mapInset {
     bottom: 50px;
     right: 30px;
-    height: 180px;
-    width: 250px;
+    height: 150px;
+    width: 200px;
     max-width: 100%;
     position: fixed;
     z-index: 1;

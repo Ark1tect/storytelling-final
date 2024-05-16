@@ -426,7 +426,7 @@ map.on('mouseleave', 'hertel-sub', () => {
 });
 
 map.on('click', 'astoria-sub', (e) => {
-    var astpop = new mapboxgl.Popup({ offset: [-300, -25] })
+    var astpop = new mapboxgl.Popup({ offset: [300, -25] })
         .setLngLat(e.lngLat)
         .setHTML('<h1>Evolving Energy</h1> <p>As New York works to complete the new converter station, other nearby properties may soon look different as well. An offshore wind company recently purchased the nearby NRG fossil-fuel powered energy plant and plans to use the site as a connection point to a large-scale wind farm off of Long Island.</p>')
         .addTo(map);
